@@ -17,12 +17,12 @@ public class TesteArrayList {
         Conta cc2 = new ContaCorrente(22, 22);
         lista.add(cc2);
 
-        System.out.println(lista.size());
+        System.out.println("Tamanho: " + lista.size());
+
         Conta ref = (Conta) lista.get(0);
         System.out.println(ref.getNumero());
 
         lista.remove(0);
-
         System.out.println("Tamanho: " + lista.size());
 
         Conta cc3 = new ContaCorrente(33, 311);
@@ -36,11 +36,12 @@ public class TesteArrayList {
             System.out.println(oRef);
         }
 
-        System.out.println("-------");
+        System.out.println("----------");
 
-        for(Object o : lista) {
-            System.out.println(o);
+        for(Object oRef : lista) {
+            System.out.println(oRef);
         }
 
     }
+
 }
