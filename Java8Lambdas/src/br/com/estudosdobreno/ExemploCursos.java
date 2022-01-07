@@ -37,7 +37,16 @@ public class ExemploCursos {
         //convertendo uma stream de Cursos para stream de String
         Stream<String> nomes = cursos.stream().map(Curso::getNome);
 
-        System.out.println(nomes.collect(Collectors.toList()));
 
+        //pegando o primeiro elemento da stream depois de filtrar
+        cursos.stream()
+                .filter(c -> c.getAlunos() >= 50)
+                .findFirst();
+
+        //calculando a idade média de alunos de todos os cursos
+        cursos.stream().mapToInt(Curso::getAlunos).average();
+
+        //convertendo uma Stream<Curso> para List<Curso>(sim, eu reatribui uma lista gerada pela stream para a lista que já existia)
+        cursos = cursos.stream().collect(Collectors.toList());
     }
 }
