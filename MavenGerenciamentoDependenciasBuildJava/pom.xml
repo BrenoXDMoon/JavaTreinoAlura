@@ -14,7 +14,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -22,8 +21,18 @@
             <scope>test</scope>
         </dependency>
 
-        
-
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.14</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-repo</id>
+            <url>https://repo.spring.io/release</url>
+        </repository>
+    </repositories>
 
 </project>
