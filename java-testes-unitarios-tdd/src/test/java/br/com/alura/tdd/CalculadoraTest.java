@@ -1,4 +1,4 @@
-package tdd;
+package br.com.alura.tdd;
 
 import br.com.alura.tdd.modelo.Calculadora;
 import org.junit.jupiter.api.Assertions;
