@@ -8,7 +8,6 @@ public class HelloWorldMockito {
     @Test
     void helloWorld(){
         LeilaoDao mock = Mockito.mock(LeilaoDao.class);
-
         Assert.assertTrue(mock.buscarTodos().isEmpty());
     }
 }
